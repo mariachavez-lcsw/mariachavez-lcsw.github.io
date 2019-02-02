@@ -1,7 +1,7 @@
 /* Footer */
 #footer {
   padding: 1rem 0;
-  background-color: black;
+  background-color: #6cf;
   width: 100%;
   font-size: .85rem;
 }
@@ -79,11 +79,11 @@
   text-align: right;
 }
 
-.footer{
+/* .footer{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height:100px;
     background:#ccc;
-}
+} */
