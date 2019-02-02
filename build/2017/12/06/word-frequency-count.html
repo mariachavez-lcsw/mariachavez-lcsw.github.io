@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Word Frequency Counter with R</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105406152-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-105406152-1');
+    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <link href="/stylesheets/main.css" rel="stylesheet" />
+    <link href="/stylesheets/hero.css" rel="stylesheet" />
+    <link href="/stylesheets/navbar.css" rel="stylesheet" />
+    <link href="/stylesheets/projects.css" rel="stylesheet" />
+    <link href="/stylesheets/blog-main.css" rel="stylesheet" />
+    <link href="/stylesheets/about.css" rel="stylesheet" />
+    <link href="/stylesheets/resume.css" rel="stylesheet" />
+    <link href="/stylesheets/contact.css" rel="stylesheet" />
+    <link href="/stylesheets/foot.css" rel="stylesheet" />
+
+    <link href="/stylesheets/blog.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body id="over-write">
+    <!-- navigation bar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-transparent animated fadeIn" id="scroll">
+  <!-- brand name -->
+  <a href="/" class="navbar-brand brand-name">David Chavez</a>
+</nav>
+
+    <!-- hero -->
+<div id="hero2">
+  <div id="blog-view">
+    <h1 id="blog"></h1>
+  </div>
+
+  <div class="section">
+    <div class="blog fadeIn">
+      <p></p>
+    </div>
+  </div>
+
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="container">
+            <h1>Word Frequency Counter with R</h1>
+
+<p>In the csv file below I wanted to find the top 10 most common technologies used in 30 job positions in Los Angeles. Instead of doing this manually I decided to use R. Below are the steps I took.</p>
+
+<p><img src="/images/blogs/blog1/focus.png" alt="csv file" /></p>
+
+<p><a href="blogs/blog1/focus.csv">CSV FILE</a></p>
+
+<h1>Import the data into R</h1>
+
+<p><code>
+  <p>#Make sure you are in the right working directory </p>
+  <p>x = read.csv(&quot;focus.csv&quot;, stringsAsFactors=FALSE) #1 </p>
+  <p>data = data$Technologies.Used #2 </p>
+  <p>data = unlist(strsplit(data, &quot;[ ]&quot;)) #3 </p>
+  <p>data = gsub(&quot;,&quot;,&quot;&quot;,data) #4 </p>
+</code></p>
+
+<p>The first line above loads the csv file into R. I only want to look at the Technologies used column therefore I use line 2 to do just that. Line three unlist the data. Without this line we would be looking at rows instead of individual words. Line 4 removes all commas from each word.</p>
+
+<h1>Convert to lower case</h1>
+
+<p><code>data = tolower(data)</code></p>
+
+<p>Since R cannot recognize that &quot;JavaScript&quot; and &quot;javascript&quot; are the same word I converted all my words to lowercase.</p>
+
+<h1>Remove periods, blanks, and junk words</h1>
+
+<p><code>
+  <p>removePeriod = which(data == &quot;·&quot;)</p>
+  <p>data = data[-removePeriod]</p>
+  <br />
+  <p>removeBlanks = which(data == &quot;&quot;)</p>
+  <p>data = data[-removeBlanks]</p>
+  <br />
+  <p>removeDeveloper = which(data == &quot;developer&quot;)</p>
+  <p>data = data[-removeDeveloper]</p>
+  <br />
+  <p>removeExperience = which(data == &quot;experience&quot;)</p>
+  <p>data = data[-removeExperience]</p>
+  <br />
+  <p>removeDevelopment = which(data == &quot;development&quot;)</p>
+  <p>data = data[-removeDevelopment]</p>
+  <br />
+  <p>removeUsing = which(data == &quot;using&quot;)</p>
+  <p>data = data[-removeUsing]</p>
+  <br />
+  <p>removeTime = which(data == &quot;time&quot;)</p>
+  <p>data = data[-removeTime]</p>
+</code></p>
+
+<p>I then cleaned up my data by removing periods from words, any empty strings in my data, and junk words. This method of removing words is fine for removing words that are uncommon. However, there is a much faster way of removing common words.</p>
+
+<h1>Remove common words</h1>
+
+<p><code>
+  <p>url = &quot;http://www.textfixer.com/resources/common-english-words.txt&quot;</p>
+  <p>stopwords= strsplit(readLines(url), &quot;,&quot;)[[1]]</p>
+  <p>removeWords=which(is.element(data, stopwords)==FALSE)</p>
+  <p>data = data[removeWords]</p>
+</code></p>
+
+<p>I used the url above to find the most common english words. I then removed all common words from my data.</p>
+
+<h1>Plot the Graph</h1>
+
+<p><code>
+  <p>barplot(sort(table(data))[(length(table(data))-10):length( table( data ) )], las=2, main = &quot;Technology Focus in Los Angeles&quot;, ylab = &quot;Frequency&quot;)</p>
+</code></p>
+
+<p>This last line of code is a bit heavy but basically it is creating a word frequency count of the cleaned data and graphing into a bar plot. This is the final output.</p>
+
+<p><img src="/images/blogs/blog1/Rplot.png" alt="Rplot" /></p>
+
+<p>One thing to note is that R did not recognize &quot;full&quot; and &quot;full-stack&quot; were the same words. To fix this we can use gsub to replace &quot;full&quot; with &quot;full-stack&quot;</p>
+
+<p><code>
+  <p>data = gsub(&quot;(full)$&quot;,&quot;full-stack&quot;,data)</p>
+</code></p>
+
+<p><img src="/images/blogs/blog1/Rplot02.png" alt="Rplot02" /></p>
+
+<p>-dvcv</p>
+
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <aside>
+  <h2>Recent Articles</h2>
+  <ol>
+      <li><a href="/2018/07/15/google-translate-gem.html">Google Translate Gem</a> <span>Jul 15</span></li>
+      <li><a href="/2018/01/06/magic-mirror.html">Magic Mirror</a> <span>Jan  6</span></li>
+      <li><a href="/2017/12/06/word-frequency-count.html">Word Frequency Counter with R</a> <span>Dec  6</span></li>
+  </ol>
+
+  <h2>Tags</h2>
+  <ol>
+      <li><a href="/tags/api.html">api (1)</a></li>
+      <li><a href="/tags/ruby.html">ruby (1)</a></li>
+      <li><a href="/tags/gem.html">gem (1)</a></li>
+      <li><a href="/tags/projects.html">projects (1)</a></li>
+      <li><a href="/tags/pi.html">pi (1)</a></li>
+      <li><a href="/tags/r.html">R (1)</a></li>
+  </ol>
+
+  <h2>By Year</h2>
+  <ol>
+      <li><a href="/2018.html">2018 (2)</a></li>
+      <li><a href="/2017.html">2017 (1)</a></li>
+  </ol>
+</aside>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="footer">
+  <div class="row footer-row">
+      <div class="col-md-3">
+          <h3 class="footer-logo"><a href="/" class="footer-logo">David Chavez</a></h3>
+      </div>
+      <div class="col-md-6">
+      </div>
+
+      <div class="col-md-3">
+          <div id="social">
+            <a href="mailto:dvcv92@gmail.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://twitter.com/dvcvapps" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dvcv92/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/dvcv" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <div class="copyright">
+            &copy; David Chavez 2018
+          </div>
+      </div>
+  </div>
+</div>
+
+  </body>
+</html>

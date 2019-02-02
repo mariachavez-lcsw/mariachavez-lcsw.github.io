@@ -1,0 +1,7 @@
+.blog h3 {
+  margin-top: 3rem;
+}
+
+.blog h3:first-child {
+  margin-top: 0px;
+}
