@@ -1,24 +1,19 @@
 <div class="blogs">
   <h1 class="section-heading">Articles</h1>
   <div class="container">
-    <% if paginate && num_pages > 1 %>
-      <p>Page <%= page_number %> of <%= num_pages %></p>
-
-      <% if prev_page %>
-        <p><%= link_to 'Previous page', prev_page %></p>
+    <h2 class='text-center'>By Category</h2>
+    <div class="row text-center">
+      <% blog.tags.each do |tag, articles| %>
+      <div class="col">
+        <p><%= link_to "#{tag} (#{articles.size})", tag_path(tag) , class: 'tags' %></p>
+      </div>
       <% end %>
-    <% end %>
+    </div>
 
     <% page_articles.each_with_index do |article, i| %>
-      <h3><%= article.date.strftime('%b %e, %Y') %></h3>
-      <p> <%= article.summary %> </p>
-      <%= link_to article.title, article, class: "btn btn-block" %>
-    <% end %>
-
-    <% if paginate %>
-      <% if next_page %>
-        <p><%= link_to 'Next page', next_page %></p>
-      <% end %>
+    <!-- <p><%= article.date.strftime('%b %e, %Y') %></p> -->
+    <p> <%= article.summary %></p>
+    <%= link_to 'Read', article, class: "btn btn-block" %>
     <% end %>
   </div>
 </div>

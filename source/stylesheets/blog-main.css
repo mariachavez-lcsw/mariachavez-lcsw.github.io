@@ -14,3 +14,13 @@
 .blogs a:hover{
   background-color: #7dc7ec;
 }
+
+a.tags  {
+  background-color: white;
+}
+a.tags:hover{
+  background-color: white;
+}
+a.tags  {
+  color: #6cf;
+}
