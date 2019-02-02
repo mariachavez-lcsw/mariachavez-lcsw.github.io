@@ -44,27 +44,9 @@
 }
 
 .r {
-  animation-duration: 3s;
-  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-delay: .5s;
 }
-.rails {
-  animation-duration: 3s;
-  animation-delay: 6s;
-}
-.angular {
-  animation-duration: 3s;
-  animation-delay: 9s;
-}
-.javascript {
-  animation-duration: 3s;
-  animation-delay: 12s;
-}
-.api {
-  animation-duration: 3s;
-  animation-delay: 15s;
-}
-
-
 
 @media(min-width:576px){
 

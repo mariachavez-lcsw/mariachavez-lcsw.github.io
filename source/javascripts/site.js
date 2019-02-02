@@ -73,7 +73,7 @@ $(window).on('load',function(){
     }
   });
   //Skills
-  var skills = ["Data Analysis with R", "Ruby on Rails", "RESTful APIs", "Hypertext Markup Language", "Cascading Style Sheets"]
+  var skills = [""]
   var index = 0;
 
   $("#skills").typeIt({
@@ -81,9 +81,9 @@ $(window).on('load',function(){
     autoStart: true
   });
   var refreshIntervalId = window.setInterval(function(){
-    if(index == skills.length + 1){
+    if(index == skills.length ){
       clearInterval(refreshIntervalId);
-      $("#skills").text('');
+      // $("#skills").text('');
     }
     $("#skills").typeIt({
       strings: skills[index],

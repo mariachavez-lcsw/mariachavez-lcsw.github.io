@@ -78,3 +78,12 @@
   font-size: .8rem;
   text-align: right;
 }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+    background:#ccc;
+}

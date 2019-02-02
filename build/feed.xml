@@ -5,208 +5,36 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2018-07-14T22:27:00-07:00</updated>
+  <updated>2019-02-02T12:53:00-08:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Google Translate Gem</title>
-    <link rel="alternate" href="http://blog.url.com/2018/07/15/google-translate-gem.html"/>
-    <id>http://blog.url.com/2018/07/15/google-translate-gem.html</id>
-    <published>2018-07-14T22:27:00-07:00</published>
-    <updated>2019-02-01T23:10:36-08:00</updated>
+    <title>First Article</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/02/first-article.html"/>
+    <id>http://blog.url.com/2019/02/02/first-article.html</id>
+    <published>2019-02-02T12:53:00-08:00</published>
+    <updated>2019-02-02T13:02:36-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h1&gt;Google Translate Gem&lt;/h1&gt;
+    <content type="html">&lt;h1&gt;First article&lt;/h1&gt;
 
-&lt;h2&gt;Gem&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;
-  gem &amp;#39;google-cloud-translate&amp;#39;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Like many other rails apps the first thing to do is to include the google translate gem.&lt;/p&gt;
-
-&lt;h2&gt;Bundle&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;
-  bundle
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Make sure to run bundle in terminal.&lt;/p&gt;
-
-&lt;h2&gt;Create Module&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;
-  touch lib/google_translate.rb
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Add a new file to your lib folder.&lt;/p&gt;
-
-&lt;h2&gt;The Code&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;
-  require &amp;quot;google/cloud/translate &lt;/br&gt;
-  module GoogleTranslate &lt;/br&gt;
-  &amp;nbsp;def self.translate&lt;em&gt;text(text, to = &amp;#39;en&amp;#39;) &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;begin &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;&amp;nbsp;translate = Google::Cloud::Translate.new project: PROJECT&lt;/em&gt;ID, key: API_KEY &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;&amp;nbsp;translation = translate.translate text, to: to &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;&amp;nbsp;return translation.text &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;rescue Google::Cloud::Error =&amp;gt; e &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;&amp;nbsp;puts e.message &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;end &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;puts &amp;quot;Text was not translated correctly. Returning original text&amp;quot; &lt;/br&gt;
-  &amp;nbsp;&amp;nbsp;text&lt;/br&gt;
-  &amp;nbsp;end &lt;/br&gt;
-  end &lt;/br&gt;
-  &lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Add the following to your new file. You will need to replace PROJECT_ID and API_KEY with your very own authentication.&lt;/p&gt;
-
-&lt;h2&gt;The Output&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;
-    rails c&lt;/br&gt;
-    [1] pry(main)&amp;gt; GoogleTranslate.translate_text(&amp;#39;hola&amp;#39;)&lt;/br&gt;
-    =&amp;gt; &amp;quot;Hello&amp;quot;&lt;/br&gt;
-  &lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#39;hola&amp;#39; was correctly translated to &amp;#39;hello&amp;#39;.&lt;/p&gt;
-
-&lt;p&gt;-dvcv&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Magic Mirror</title>
-    <link rel="alternate" href="http://blog.url.com/2018/01/06/magic-mirror.html"/>
-    <id>http://blog.url.com/2018/01/06/magic-mirror.html</id>
-    <published>2018-01-05T21:28:00-08:00</published>
-    <updated>2019-02-01T23:10:36-08:00</updated>
+    <title>Second Article</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/01/second-article.html"/>
+    <id>http://blog.url.com/2019/02/01/second-article.html</id>
+    <published>2019-02-01T12:54:00-08:00</published>
+    <updated>2019-02-02T13:02:57-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h1&gt;Magic Mirror&lt;/h1&gt;
+    <content type="html">&lt;h1&gt;Second article&lt;/h1&gt;
 
-&lt;p&gt;Previously, I had worked with the rasberrypi to create an retro bartop arcade.
-After making it I still had an itch to make something else with the powerful little computer.
-I found that the magic mirror was one of the most popular projects with the raspberrypi.
-Below is an example of what it looks like when turned on.&lt;/p&gt;
-
-&lt;p&gt;UPDATE&lt;/p&gt;
-
-&lt;p&gt;I recently re-painted the magic mirror and added a motion sensor to the mirror.&lt;/p&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;blockquote class="imgur-embed-pub" lang="en" data-id="nOsLE1j"&gt;&lt;a href="//imgur.com/nOsLE1j"&gt;&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src="//s.imgur.com/min/embed.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;h1&gt;Slideshow&lt;/h1&gt;
-
-&lt;div style="text-align:center"&gt;
-  &lt;blockquote class="imgur-embed-pub" lang="en" data-id="a/unhm5"&gt;&lt;a href="//imgur.com/unhm5"&gt;Magic Mirror&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src="//s.imgur.com/min/embed.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;-dvcv&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Word Frequency Counter with R</title>
-    <link rel="alternate" href="http://blog.url.com/2017/12/06/word-frequency-count.html"/>
-    <id>http://blog.url.com/2017/12/06/word-frequency-count.html</id>
-    <published>2017-12-05T21:29:00-08:00</published>
-    <updated>2019-02-01T23:10:36-08:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;h1&gt;Word Frequency Counter with R&lt;/h1&gt;
-
-&lt;p&gt;In the csv file below I wanted to find the top 10 most common technologies used in 30 job positions in Los Angeles. Instead of doing this manually I decided to use R. Below are the steps I took.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/images/blogs/blog1/focus.png" alt="csv file" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="blogs/blog1/focus.csv"&gt;CSV FILE&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1&gt;Import the data into R&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;#Make sure you are in the right working directory &lt;/p&gt;
-  &lt;p&gt;x = read.csv(&amp;quot;focus.csv&amp;quot;, stringsAsFactors=FALSE) #1 &lt;/p&gt;
-  &lt;p&gt;data = data$Technologies.Used #2 &lt;/p&gt;
-  &lt;p&gt;data = unlist(strsplit(data, &amp;quot;[ ]&amp;quot;)) #3 &lt;/p&gt;
-  &lt;p&gt;data = gsub(&amp;quot;,&amp;quot;,&amp;quot;&amp;quot;,data) #4 &lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The first line above loads the csv file into R. I only want to look at the Technologies used column therefore I use line 2 to do just that. Line three unlist the data. Without this line we would be looking at rows instead of individual words. Line 4 removes all commas from each word.&lt;/p&gt;
-
-&lt;h1&gt;Convert to lower case&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;data = tolower(data)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Since R cannot recognize that &amp;quot;JavaScript&amp;quot; and &amp;quot;javascript&amp;quot; are the same word I converted all my words to lowercase.&lt;/p&gt;
-
-&lt;h1&gt;Remove periods, blanks, and junk words&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;removePeriod = which(data == &amp;quot;·&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removePeriod]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeBlanks = which(data == &amp;quot;&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeBlanks]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeDeveloper = which(data == &amp;quot;developer&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeDeveloper]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeExperience = which(data == &amp;quot;experience&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeExperience]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeDevelopment = which(data == &amp;quot;development&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeDevelopment]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeUsing = which(data == &amp;quot;using&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeUsing]&lt;/p&gt;
-  &lt;br /&gt;
-  &lt;p&gt;removeTime = which(data == &amp;quot;time&amp;quot;)&lt;/p&gt;
-  &lt;p&gt;data = data[-removeTime]&lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I then cleaned up my data by removing periods from words, any empty strings in my data, and junk words. This method of removing words is fine for removing words that are uncommon. However, there is a much faster way of removing common words.&lt;/p&gt;
-
-&lt;h1&gt;Remove common words&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;url = &amp;quot;http://www.textfixer.com/resources/common-english-words.txt&amp;quot;&lt;/p&gt;
-  &lt;p&gt;stopwords= strsplit(readLines(url), &amp;quot;,&amp;quot;)[[1]]&lt;/p&gt;
-  &lt;p&gt;removeWords=which(is.element(data, stopwords)==FALSE)&lt;/p&gt;
-  &lt;p&gt;data = data[removeWords]&lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I used the url above to find the most common english words. I then removed all common words from my data.&lt;/p&gt;
-
-&lt;h1&gt;Plot the Graph&lt;/h1&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;barplot(sort(table(data))[(length(table(data))-10):length( table( data ) )], las=2, main = &amp;quot;Technology Focus in Los Angeles&amp;quot;, ylab = &amp;quot;Frequency&amp;quot;)&lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This last line of code is a bit heavy but basically it is creating a word frequency count of the cleaned data and graphing into a bar plot. This is the final output.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/images/blogs/blog1/Rplot.png" alt="Rplot" /&gt;&lt;/p&gt;
-
-&lt;p&gt;One thing to note is that R did not recognize &amp;quot;full&amp;quot; and &amp;quot;full-stack&amp;quot; were the same words. To fix this we can use gsub to replace &amp;quot;full&amp;quot; with &amp;quot;full-stack&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-  &lt;p&gt;data = gsub(&amp;quot;(full)$&amp;quot;,&amp;quot;full-stack&amp;quot;,data)&lt;/p&gt;
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/images/blogs/blog1/Rplot02.png" alt="Rplot02" /&gt;&lt;/p&gt;
-
-&lt;p&gt;-dvcv&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
 </content>
   </entry>
 </feed>
