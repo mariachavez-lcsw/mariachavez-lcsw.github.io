@@ -14,11 +14,14 @@
     <link rel="alternate" href="http://blog.url.com/2019/02/03/third-article.html"/>
     <id>http://blog.url.com/2019/02/03/third-article.html</id>
     <published>2019-02-02T16:20:00-08:00</published>
-    <updated>2019-02-02T16:20:35-08:00</updated>
+    <updated>2019-02-02T16:21:52-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html"></content>
+    <content type="html">&lt;h2&gt;Third article&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>Second Article</title>
