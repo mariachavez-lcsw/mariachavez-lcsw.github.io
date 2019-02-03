@@ -5,16 +5,27 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2019-02-02T12:54:00-08:00</updated>
+  <updated>2019-02-02T16:20:00-08:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Third Article</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/03/third-article.html"/>
+    <id>http://blog.url.com/2019/02/03/third-article.html</id>
+    <published>2019-02-02T16:20:00-08:00</published>
+    <updated>2019-02-02T16:20:35-08:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html"></content>
+  </entry>
   <entry>
     <title>Second Article</title>
     <link rel="alternate" href="http://blog.url.com/2019/02/02/second-article.html"/>
     <id>http://blog.url.com/2019/02/02/second-article.html</id>
     <published>2019-02-02T12:54:00-08:00</published>
-    <updated>2019-02-02T15:09:47-08:00</updated>
+    <updated>2019-02-02T15:29:39-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -28,7 +39,7 @@
     <link rel="alternate" href="http://blog.url.com/2019/02/01/first-article.html"/>
     <id>http://blog.url.com/2019/02/01/first-article.html</id>
     <published>2019-02-01T12:53:00-08:00</published>
-    <updated>2019-02-02T15:09:48-08:00</updated>
+    <updated>2019-02-02T15:29:32-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>

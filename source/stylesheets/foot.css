@@ -6,6 +6,11 @@
   font-size: .85rem;
 }
 
+.articles {
+  height:100vh;
+  min-height: 600px; 
+}
+
 .footer-row {
   margin: 0 auto;
 }
