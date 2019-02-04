@@ -14,6 +14,9 @@ $(window).on('resize',mobileViewUpdate);
 $(window).on('load',function(){
   mobileViewUpdate();
   // Main
+  $(".navbar-brand").click(function() {
+    $('#navbarNavAltMarkup').removeClass("show");
+  });
   $(".projects-link").click(function() {
       $('#navbarNavAltMarkup').removeClass("show");
       $('html, body').animate({

@@ -15,10 +15,19 @@
   z-index: 9999;
 }
 
-#over-write .navbar-transparent a {
-    color: black;
-}
-
 .navbar-toggler {
     background-color: white;
+}
+
+#over-write .navbar-transparent img {
+    color: black;
+    width: 150px;
+    height: 30px;
+}
+
+
+#over-write .navbar-default img {
+    color: black;
+    width: 150px;
+    height: 30px;
 }
