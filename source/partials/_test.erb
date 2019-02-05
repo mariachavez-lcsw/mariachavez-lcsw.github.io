@@ -1,0 +1,12 @@
+<div class="blogs">
+  <h1 class="section-heading">Articles</h1>
+  <div class="container">
+    <div class="grid-layout">
+      <% blog.tags.each do |tag, articles| %>
+        <% link_to tag_path(tag), class: "grid-item"  do %>
+          <h1> <%= "#{tag} (#{articles.size})" %> </h1>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
