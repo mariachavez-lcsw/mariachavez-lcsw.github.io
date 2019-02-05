@@ -5,50 +5,50 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2019-02-02T16:20:00-08:00</updated>
+  <updated>2019-02-04T18:14:00-08:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Third Article</title>
-    <link rel="alternate" href="http://blog.url.com/2019/02/03/third-article.html"/>
-    <id>http://blog.url.com/2019/02/03/third-article.html</id>
-    <published>2019-02-02T16:20:00-08:00</published>
-    <updated>2019-02-03T19:58:57-08:00</updated>
+    <title>Calm Sound</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/05/calm-sound.html"/>
+    <id>http://blog.url.com/2019/02/05/calm-sound.html</id>
+    <published>2019-02-04T18:14:00-08:00</published>
+    <updated>2019-02-04T19:58:47-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h2&gt;Third article&lt;/h2&gt;
+    <content type="html">&lt;h1&gt;Calm Sound&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://www.calmsound.com" target="_blank"&gt;calmsound link&lt;/a&gt;&lt;/h3&gt;
 </content>
   </entry>
   <entry>
-    <title>Second Article</title>
-    <link rel="alternate" href="http://blog.url.com/2019/02/02/second-article.html"/>
-    <id>http://blog.url.com/2019/02/02/second-article.html</id>
-    <published>2019-02-02T12:54:00-08:00</published>
-    <updated>2019-02-03T19:58:51-08:00</updated>
+    <title>Parents Med Guide</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/05/parents-med-guide.html"/>
+    <id>http://blog.url.com/2019/02/05/parents-med-guide.html</id>
+    <published>2019-02-04T18:12:00-08:00</published>
+    <updated>2019-02-04T19:59:22-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h2&gt;Second article&lt;/h2&gt;
+    <content type="html">&lt;h1&gt;Parents Med Guide&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://parentsmedguide.org" target="_blank"&gt;Parents Guide link&lt;/a&gt;&lt;/h3&gt;
 </content>
   </entry>
   <entry>
-    <title>First Article</title>
-    <link rel="alternate" href="http://blog.url.com/2019/02/01/first-article.html"/>
-    <id>http://blog.url.com/2019/02/01/first-article.html</id>
-    <published>2019-02-01T12:53:00-08:00</published>
-    <updated>2019-02-03T19:58:28-08:00</updated>
+    <title>24/7 Mental Health Urgent Care</title>
+    <link rel="alternate" href="http://blog.url.com/2019/02/05/24-7-mental-health-urgent-care.html"/>
+    <id>http://blog.url.com/2019/02/05/24-7-mental-health-urgent-care.html</id>
+    <published>2019-02-04T18:04:00-08:00</published>
+    <updated>2019-02-04T20:18:29-08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h2&gt;First article&lt;/h2&gt;
+    <content type="html">&lt;h1&gt;24/7 Mental Health Urgent Care&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, mentitum ullamcorper voluptatibus cu mei, et est tale constituto, an graece inciderint mel. Vix te discere utroque. An usu graecis reprimique, aliquid inimicus et mel. Qui lorem epicuri appareat in. Ea pro quando praesent, et ubique lucilius pro. No quo assum vivendo mandamus.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/Dual.pdf" alt="Download" /&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
