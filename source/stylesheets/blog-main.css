@@ -35,21 +35,19 @@ a.tags  {
 }
 
 a.grid-item {
-  background-color: orange;
-}
-a.grid-item:hover{
-  background-color: red;
-}
-.grid-item {
     padding: 1rem;
     font-size: 14px;
     font-weight: bold;
+    background-color: orange;
     text-transform: uppercase;
-    color: #929796;
+    color: white;
     border-radius: 5px;
-    &:nth-child(odd) {
+    /* &:nth-child(odd) {
         background-color: #424242;
-    }
+    } */
+}
+a.grid-item:hover{
+  background-color: red;
 }
 
 .span-2 {
