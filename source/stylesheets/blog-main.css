@@ -3,11 +3,7 @@
 }
 
 .blogs {
-  margin-bottom: 10px;
-}
-
-.blogs h3:first-child {
-  margin-top: 0px;
+  padding-bottom: 60px;
 }
 
 a.tags  {

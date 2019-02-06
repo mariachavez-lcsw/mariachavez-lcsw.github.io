@@ -19,13 +19,13 @@
     background-color: white;
 }
 
-#over-write .navbar-transparent img {
+.navbar-transparent img {
     color: black;
     width: 150px;
     height: 30px;
 }
 
-#over-write .navbar-default img {
+.navbar-default img {
     color: black;
     width: 150px;
     height: 30px;

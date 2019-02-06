@@ -5,39 +5,39 @@
   margin-right: 2rem;
 }
 
-.about p {
+p.about {
   font-size: 30px;
 }
 
-#over-write .about p{
+p.about{
   font-size: .8rem;
 }
 
 
 @media(min-width:576px){
 
-  #over-write .about p{
+  p.about{
     font-size: .8rem;
   }
 
 }
 @media(min-width:768px){
 
-  #over-write .about p{
+  p.about{
     font-size: 1rem;
   }
 
 }
 @media(min-width:992px){
 
-  #over-write .about p{
+  p.about {
     font-size: 1.1rem;
   }
 
 }
 @media(min-width:1200px){
 
-  #over-write .about p{
+  p.about {
     font-size: 1.2rem;
   }
 

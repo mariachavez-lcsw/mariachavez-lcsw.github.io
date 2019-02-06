@@ -1,8 +1,22 @@
-html, body{
-  width:100%;
-  height:100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
-/*sections*/
+
+body {
+    margin: 0 0 50px;
+    /* bottom = footer height */
+}
+
+img {
+max-width: 200px;
+height: auto;
+}
+
+a {
+  cursor: pointer;
+}
+
 .section{
     height: 100%;
     width:100%;
@@ -10,13 +24,7 @@ html, body{
     align-items: center;
     justify-content: center;
     color: black;
-    position: relative;
-}
-
-img {
-max-width: 400px;
-height: auto;
-}
+  }
 
 .section-heading {
     padding-top: 60px;
