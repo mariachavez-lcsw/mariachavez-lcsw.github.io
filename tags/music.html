@@ -26,28 +26,13 @@
     <script src="/javascripts/site.js"></script>
   </head>
   <body id="over-write">
-      <!-- navigation bar -->
+    <!-- navigation bar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-transparent" id="scroll">
   <!-- brand name -->
-  <a class="navbar-brand brand-name" href="#">
-    <img src="images/logo.png">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+<a href="/" class="navbar-brand brand-name">    <img src="/images/logo.png" alt="Logo" />
+</a></nav>
 
-      <!-- <a class="nav-item nav-link projects-link" href="#">Projects</a> -->
-      <a class="nav-item nav-link blog-link" href="#">Articles</a>
-      <!-- <a class="nav-item nav-link about-link" href="#">About</a> -->
-      <!-- <a class="nav-item nav-link resume-link" href="#">Resume</a> -->
-      <!-- <a class="nav-item nav-link contact-link" href="#">Contact</a> -->
-    </div>
-  </div>
-</nav>
-
-<!-- hero -->
+    <!-- hero -->
 <div id="hero">
   <div class="section">
     <div class="skill r">
@@ -56,41 +41,52 @@
   </div>
 </div>
 
-<div class="blogs">
-  <h1 class="section-heading">Articles</h1>
-  <div class="container">
-    <div class="grid-layout">
-<a href="/tags/music.html" class="grid-item">          <h1> Music (1) </h1>
-</a><a href="/tags/parents.html" class="grid-item">          <h1> Parents (1) </h1>
-</a><a href="/tags/mental-health.html" class="grid-item">          <h1> Mental Health (1) </h1>
-</a>    </div>
-  </div>
-</div>
+    <div class="container articles">
+      <div class="row">
+        <div class="col-xl-9 col-lg-9">
+          <div class="container">
+            <h1 class='section-heading'>Articles tagged Music</h1>
 
 
-      <!-- <div class="container-fluid" id="footer">
-  <div class="row footer-row section">
-      <div class="col-md-3">
-          <a class="" href="#">
-            <img src="images/logo.png" style="height: 25px; width: 100px;">
-          </a>
-      </div>
-      <div class="col-md-3 fix-col"">
-          <div class="fix-col">
-            <a class ="blog-link">Articles</a>
-          </div>
-      </div>
-      <div class="col-md-3">
-          <div id="">
-          </div>
-          <div class="copyright">
-            &copy; Brown 2019
-          </div>
-      </div>
-  </div>
-</div> -->
 
-<footer class="footer-section">
+<ul class="rolldown-list" id="myList">
+<a href="/2019/02/05/calm-sound.html" class="">    <li>Calm Sound</li>
+</a></ul>
+
+
+<!-- <ul>
+    <li><a href="/2019/02/05/calm-sound.html">Calm Sound</a> <span>Feb  5</span></li>
+</ul> -->
+
+
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+          <aside class='recent-articles'>
+  <h2>Recent Articles</h2>
+  <ol>
+      <li><a href="/2019/02/05/calm-sound.html">Calm Sound</a> <span>Feb  5</span></li>
+      <li><a href="/2019/02/05/parents-med-guide.html">Parents Med Guide</a> <span>Feb  5</span></li>
+      <li><a href="/2019/02/05/24-7-mental-health-urgent-care.html">24/7 Mental Health Urgent Care</a> <span>Feb  5</span></li>
+  </ol>
+
+  <h2>Tags</h2>
+  <ol>
+      <li><a href="/tags/music.html">Music (1)</a></li>
+      <li><a href="/tags/parents.html">Parents (1)</a></li>
+      <li><a href="/tags/mental-health.html">Mental Health (1)</a></li>
+  </ol>
+
+  <h2>By Year</h2>
+  <ol>
+      <li><a href="/2019.html">2019 (3)</a></li>
+  </ol>
+</aside>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section">
         <div class="copyright-area">
             <div class="container">
                 <div class="row">
@@ -102,7 +98,7 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a class ="blog-link">Articles</a></li>
+                                <li><a href="/" class="">Home</a></li>
                                 <!-- <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
