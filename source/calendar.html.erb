@@ -1,7 +1,7 @@
 ---
 pageable: true
 ---
-<h1>Archive for
+<h1 class='section-heading'>Archive for
   <% case page_type
      when 'day' %>
     <%= Date.new(year, month, day).strftime('%b %e %Y') %>
@@ -20,9 +20,11 @@ pageable: true
   <% end %>
 <% end %>
 
-<ul>
+<ul class="rolldown-list" id="myList">
   <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+    <% link_to article, class: ""  do %>
+    <li><%= article.title %>-<%= article.date.strftime('%b %e') %></li>
+    <% end %>
   <% end %>
 </ul>
 

@@ -36,3 +36,8 @@ a {
     text-transform: uppercase;
     position: relative;
 }
+
+.recent-articles {
+  padding-top: 60px;
+
+}

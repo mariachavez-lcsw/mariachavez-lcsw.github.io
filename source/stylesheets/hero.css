@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 2px 2px black;
+    -webkit-filter: drop-shadow(5px 5px 5px #66ccff);
+    filter: drop-shadow(5px 5px 5px #66ccff);
 }
 
 #hero2{

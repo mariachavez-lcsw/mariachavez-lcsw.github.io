@@ -12,6 +12,24 @@ function mobileViewUpdate() {
 
 $(window).on('resize',mobileViewUpdate);
 $(window).on('load',function(){
+
+  // Increments the delay on each item.
+  $('.rolldown-list a ').each(function () {
+    var delay = ($(this).index() / 4) + 's';
+    $(this).css({
+      webkitAnimationDelay: delay,
+      mozAnimationDelay: delay,
+      animationDelay: delay
+    });
+  });
+
+  // $('#btnReload').click(function () {
+  //   $('#myList').removeClass('rolldown-list');
+  //   setTimeout(function () {
+  //     $('#myList').addClass('rolldown-list');
+  //   }, 1);
+  // });
+
   mobileViewUpdate();
   // Main
   $(".navbar-brand").click(function() {

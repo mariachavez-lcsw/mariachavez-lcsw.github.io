@@ -38,12 +38,11 @@ a.grid-item {
     text-transform: uppercase;
     color: white;
     border-radius: 5px;
-    /* &:nth-child(odd) {
-        background-color: #424242;
-    } */
+    -webkit-filter: drop-shadow(3px 3px 3px #878787);
+    filter: drop-shadow(3px 3px 3px #878787);
 }
 a.grid-item:hover{
-  background-color: red;
+  background-color: #ff4500;
 }
 
 .span-2 {
